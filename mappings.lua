@@ -6,7 +6,7 @@ M.general = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
   },
   v = {
-    [">"] = { ">gv", "indent"},
+    [">"] = { ">gv", "indent" },
   },
 }
 
@@ -22,8 +22,12 @@ M.cmaketools = {
       "Run the built cmake file",
     },
     ["<leader>cd"] = {
-        "<cmd> CMakeDebug <CR>",
-        "Debug the cmake binary"
+      "<cmd> CMakeDebug <CR>",
+      "Debug the cmake binary",
+    },
+    ["<leader>cc"] = {
+      "<cmd> CMakeClean <CR>",
+      "CMakeClean",
     },
     ["<leader>csb"] = {
       "<cmd> CMakeSelectBuildTarget <CR>",
@@ -37,7 +41,7 @@ M.cmaketools = {
       "<cmd> CMakeSelectBuildType <CR>",
       "Select build type",
     },
-  }
+  },
 }
 
 M.dap = {
@@ -55,7 +59,7 @@ M.dap = {
       "<cmd> DapStepInto <CR>",
       "Step into debugger",
     },
-  }
+  },
 }
 
 M.todo = {
@@ -68,7 +72,7 @@ M.todo = {
     ["<leader>tq"] = {
       "<cmd> TodoQuickFix <CR>",
       "Todo in quickfix",
-    }
+    },
   },
 }
 
