@@ -81,6 +81,16 @@ M.lazygit = {
     },
   },
 }
+
+M.overseer = {
+  plugin = true,
+  n = {
+    ["<leader>o"] = {
+      "<cmd> OverseerToggle <CR>",
+      "Toggles overseer",
+    },
+  },
+}
 -- more keybinds!
 
 return M

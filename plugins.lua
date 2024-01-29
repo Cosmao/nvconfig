@@ -63,6 +63,9 @@ local plugins = {
   {
     "Civitasv/cmake-tools.nvim",
     ft = { "c", "h", "cpp", "hpp" },
+    dependencies = {
+      "stevearc/overseer.nvim",
+    },
     config = function()
       -- require "custom.configs.cmaketools"
       require("cmake-tools").setup(require "custom.configs.cmaketools")
@@ -130,6 +133,19 @@ local plugins = {
     config = function()
       require("core.utils").load_mappings "lazygit"
     end,
+  },
+  {
+    "stevearc/overseer.nvim",
+    opts = {},
+    config = function()
+      require("core.utils").load_mappings "overseer"
+      require("overseer").setup()
+    end,
+  },
+  {
+    "rcarriga/nvim-notify",
+    lazy = true,
+    opts = {},
   },
 }
 
