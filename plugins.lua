@@ -91,6 +91,9 @@ local plugins = {
         "codelldb",
       },
     },
+    -- config = function()
+      -- require("overseer").patch_dap(true)
+    -- end,
   },
   {
     "rcarriga/nvim-dap-ui",
@@ -136,10 +139,13 @@ local plugins = {
   },
   {
     "stevearc/overseer.nvim",
+    dependencies = {
+      "rcarriga/nvim-notify",
+    },
     opts = {},
     config = function()
       require("core.utils").load_mappings "overseer"
-      require("overseer").setup()
+      require("overseer").setup( { dap = false } )
     end,
   },
   {

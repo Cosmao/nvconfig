@@ -13,6 +13,9 @@ M.general = {
 M.cmaketools = {
   plugin = true,
   n = {
+    ["<leader>c"] = {
+      "CMake",
+    },
     ["<leader>cb"] = {
       "<cmd> CMakeBuild <CR>",
       "Build project with cmake",
@@ -28,6 +31,9 @@ M.cmaketools = {
     ["<leader>cc"] = {
       "<cmd> CMakeClean <CR>",
       "CMakeClean",
+    },
+    ["<leader>cs"] = {
+      "CMake select options",
     },
     ["<leader>csb"] = {
       "<cmd> CMakeSelectBuildTarget <CR>",
@@ -47,6 +53,7 @@ M.cmaketools = {
 M.dap = {
   plugin = true,
   n = {
+    ["<leader>d"] = { "DAP " },
     ["<leader>db"] = {
       "<cmd> DapToggleBreakpoint <CR>",
       "Add breakpoint at line",
@@ -91,7 +98,7 @@ M.overseer = {
   n = {
     ["<leader>o"] = {
       "<cmd> OverseerToggle <CR>",
-      "Toggles overseer",
+      "Toggle overseer",
     },
   },
 }
