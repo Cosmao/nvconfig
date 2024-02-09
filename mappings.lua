@@ -32,6 +32,10 @@ M.cmaketools = {
       "<cmd> CMakeClean <CR>",
       "CMakeClean",
     },
+    ["<leader>ck"] = {
+      "<cmd> CMakeStopRunner <CR>",
+      "Kill CMake Runner",
+    },
     ["<leader>cs"] = {
       "CMake select options",
     },
@@ -47,13 +51,21 @@ M.cmaketools = {
       "<cmd> CMakeSelectBuildType <CR>",
       "Select build type",
     },
+    ["<leader>cso"] = {
+      "<cmd> CMakeTargetSettings <CR>",
+      "Target Options",
+    },
+    ["<leader>csl"] = {
+      "<cmd> CMakeSettings <CR>",
+      "CMake settings",
+    },
   },
 }
 
 M.dap = {
   plugin = true,
   n = {
-    ["<leader>d"] = { "DAP " },
+    ["<leader>d"] = { "DAP" },
     ["<leader>db"] = {
       "<cmd> DapToggleBreakpoint <CR>",
       "Add breakpoint at line",
@@ -88,7 +100,7 @@ M.lazygit = {
   n = {
     ["<leader>gl"] = {
       "<cmd> LazyGit <CR>",
-      "Opens lazygit",
+      "Lazygit",
     },
   },
 }
@@ -98,7 +110,7 @@ M.overseer = {
   n = {
     ["<leader>o"] = {
       "<cmd> OverseerToggle <CR>",
-      "Toggle overseer",
+      "Toggle Overseer",
     },
   },
 }
