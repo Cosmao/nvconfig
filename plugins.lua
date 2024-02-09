@@ -10,7 +10,8 @@ local plugins = {
     dependencies = {
       -- format & linting
       {
-        "jose-elias-alvarez/null-ls.nvim",
+        -- "jose-elias-alvarez/null-ls.nvim",
+        "nvimtools/none-ls.nvim",
         config = function()
           require "custom.configs.null-ls"
         end,
@@ -92,7 +93,7 @@ local plugins = {
       },
     },
     -- config = function()
-      -- require("overseer").patch_dap(true)
+    -- require("overseer").patch_dap(true)
     -- end,
   },
   {
@@ -145,7 +146,7 @@ local plugins = {
     opts = {},
     config = function()
       require("core.utils").load_mappings "overseer"
-      require("overseer").setup( { dap = false } )
+      require("overseer").setup { dap = false }
     end,
   },
   {
