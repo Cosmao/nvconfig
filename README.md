@@ -2,9 +2,9 @@
 my nvchad config
 
 Todo:
-nvim DAP\n
-cmaketools?\n
-make some proper overseer jobs\n
+- nvim DAP
+- cmaketools?
+- make some proper overseer jobs
 
 # Original readme
 **This repo is supposed to used as config by NvChad users!**
