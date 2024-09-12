@@ -1,4 +1,4 @@
-### nvchad config
+# nvchad config
 my nvchad config
 
 # Original readme
