@@ -14,13 +14,14 @@ return {
   },
 
   {
-    -- TODO: find out why I need to disable lazy load
     "kdheepak/lazygit.nvim",
-    lazy = false,
-    dependencies = {
+    cmd = { "LazyGit" },
+    --    lazy = false,
+    --[[    dependencies = {
       "nvim-lua/plenary.nvim",
       "nvim-telescope/telescope.nvim",
-    },
+    }, ]]
+    --
     config = function()
       require("telescope").load_extension "lazygit"
     end,
@@ -46,14 +47,14 @@ return {
   {
     -- TODO: find out why I need to disable lazy load
     "folke/todo-comments.nvim",
-    dependencies = { "nvim-lua/plenary.nvim" },
+    --   dependencies = { "nvim-lua/plenary.nvim" },
     lazy = false,
     opts = {},
   },
 
   {
     "rcarriga/nvim-notify",
-    dependencies = {},
+    -- dependencies = {},
     config = function()
       -- require("telescope").load_extension "notify"
       -- require("telescope").extensions.notify.notify()
@@ -66,19 +67,22 @@ return {
   {
     -- TODO: find out why I need to disable lazy load
     "stevearc/overseer.nvim",
-    dependencies = {
+    --[[dependencies = {
       "rcarriga/nvim-notify",
       "stevearc/dressing.nvim",
-    },
+    },]]
+    --
     config = function()
       require("overseer").setup {
         templates = {
           "builtin",
           "usr.java_build",
+          "usr.java_run",
         },
       }
     end,
-    lazy = false,
+    --lazy = false,
+    cmd = { "OverseerToggle", "OverseerRun" },
   },
 
   {
@@ -92,7 +96,7 @@ return {
   {
     "MeanderingProgrammer/render-markdown.nvim",
     opts = {},
-    dependencies = { "nvim-treesitter/nvim-treesitter" },
+    --dependencies = { "nvim-treesitter/nvim-treesitter" },
     -- dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.nvim" }, -- if you use the mini.nvim suite
     -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.icons' }, -- if you use standalone mini plugins
     -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' }, -- if you prefer nvim-web-devicons
