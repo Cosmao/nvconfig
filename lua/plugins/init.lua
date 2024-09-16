@@ -45,7 +45,7 @@ return {
   },
 
   {
-    -- TODO: find out why I need to disable lazy load
+    -- TODO: See if I can make it lazy load somehow, seems iffy
     "folke/todo-comments.nvim",
     --   dependencies = { "nvim-lua/plenary.nvim" },
     lazy = false,
@@ -65,7 +65,6 @@ return {
   },
 
   {
-    -- TODO: find out why I need to disable lazy load
     "stevearc/overseer.nvim",
     --[[dependencies = {
       "rcarriga/nvim-notify",
